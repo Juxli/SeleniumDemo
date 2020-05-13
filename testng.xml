@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Default Suite">
+    <test name="first_maven_project">
+        <classes>
+            <class name="testDemo.BrowserTest4">
+                <methods>
+                    <include name="test2" invocation-numbers="0"/>
+                    <include name="test1" invocation-numbers="0"/>
+                </methods>
+            </class>
+            <class name="testDemo.BrowserTest3"></class>
+            <parameter name="browser" value="chrome"></parameter>
+            <parameter name="url" value="https://www.baidu.com"></parameter>
+        </classes>
+    </test> <!-- first_maven_project -->
+</suite> <!-- Default Suite -->
+
