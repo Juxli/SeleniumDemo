@@ -10,12 +10,12 @@ public class BrowserTest1 {
     @Test
     public void Browser(){
         // Chrome testing
-//        System.setProperty("webdriver.chrome.driver", "drivers/chromedriver");
-//        WebDriver dr = new ChromeDriver();
+        System.setProperty("webdriver.chrome.driver", "drivers/chromedriver");
+        WebDriver dr = new ChromeDriver();
 
         // Firefox testing
-        System.setProperty("webdriver.gecko.driver", "drivers/geckodriver");
-        WebDriver dr = new FirefoxDriver();
+//        System.setProperty("webdriver.gecko.driver", "drivers/geckodriver");
+//        WebDriver dr = new FirefoxDriver();
 
         dr.manage().window().maximize();
         dr.get("https://www.baidu.com");

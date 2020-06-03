@@ -34,8 +34,9 @@ public class BrowserTest4 {
     // 默认执行顺序为：Test方法名按字符对比，小的先执行，所以无论test1写在哪里都会先执行 test1，后执行test2
     // 更改顺序：1. 用priority指定 执行顺序 2. 在testng.xml方法中指定方法的执行顺序, priority的优先级高于setting 里面指定的优先级
     @Test
-    public void test1(){
+    public void test1() throws InterruptedException {
         dr.findElement(By.id("kw")).clear();
+        Thread.sleep(2000);
         dr.findElement(By.id("kw")).sendKeys("selenium");
         dr.findElement(By.id("su")).click();
     }

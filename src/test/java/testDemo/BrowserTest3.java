@@ -32,8 +32,9 @@ public class BrowserTest3 {
     }
 
     @Test
-    public void browser(){
+    public void browser() throws InterruptedException {
         dr.findElement(By.id("kw")).clear();
+        Thread.sleep(2000);
         dr.findElement(By.id("kw")).sendKeys("selenium");
         dr.findElement(By.id("su")).click();
     }
